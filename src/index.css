@@ -1,13 +1,110 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+  align-items: center;
+  justify-items: center;
+  font-family: "Poppins", sans-serif;
+  color: hsl(0, 100%, 100%);
+  background-image: url("./images/bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+  max-width: 80%;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+h1 {
+  line-height: 1.25;
+}
+
+.title {
+  margin: 1rem 0 1rem 0;
+}
+
+button {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font: inherit;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: hsl(0, 100%, 100%);
+  transition: 0.5s;
+}
+
+.try-btn {
+  background-color: hsl(248, 32%, 49%);
+  margin: 2rem 0 1rem 0;
+  padding: 1rem 3rem;
+}
+
+span {
+  font-weight: 600;
+}
+
+.card {
+  background-color: hsl(0, 100%, 100%);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  /* font: inherit; */
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+  width: 100%;
+}
+
+form p {
+  color: hsl(246, 25%, 77%);
+}
+
+.claim-btn {
+  background-color: hsl(154, 59%, 51%);
+  margin-bottom: 1rem;
+  padding: 1rem 0.5rem;
+  font-weight: 600;
+}
+
+a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .text {
+    margin: auto;
+    text-align: left;
+    padding: 3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
 }
